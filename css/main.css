@@ -1,0 +1,287 @@
+
+/*GLOBALS*/
+*{
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: Arial;
+    font-size: 1.4rem;
+    background: url(./../img/fondo.jpg);
+    padding: 30px;
+}
+.wrapper{
+   /* width: 90%;
+    margin: auto;
+    background: white;*/
+}
+
+h1,h2,
+h3,h4,
+h5,h6{
+    color: white;
+    font-size: 2.5rem;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+h2:hover{
+    border: 1px solid black;
+
+}
+/* .header*/
+ .header{
+    background: black;
+    display: flex;
+    justify-content: space-between; 
+    padding: 30px 20px;  
+    vertical-align: top;
+ }
+
+ .header ul{
+    display: flex;
+    align-items: center;    
+ }
+
+ .header li{
+     margin-left: 10px;
+     margin-right: 30px;
+
+ }
+
+ /* main */
+ main{
+     background: white;
+     padding: 30px;
+   
+ }
+
+ /* .about*/
+
+ .about{     
+     margin-bottom: 70px;
+ }
+
+ .about h2{
+     color: black;
+     margin-bottom: 20px;
+     font-weight: bold;
+    display: inline-block;
+ }
+ .about .linea{
+     width: 4px;
+     height: 18px;
+     background:#006c54;
+     display: inline-block;
+ }
+ .about .linea:hover{
+     border: 1px solid blue;
+ }
+
+ .cont-about{
+     display: flex;
+     justify-content: space-between; 
+     
+ }
+
+ .about .imagen{
+     margin-right: 40px;
+ }
+
+ .about .cont-about img{
+     width: 200px;
+     height: 200px;
+     border-radius: 100%;
+     border: 6px solid #42704e;
+ }
+
+ .about p{
+     font-size: 1.8rem;
+     line-height: 2.8rem;
+     margin-bottom: 40px;
+ }
+
+.about .redes a {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    padding: 10px;
+    margin: 5px;
+
+}
+.about .redes a:hover{
+    border: 1px solid blue;
+}
+.redes a:nth-child(1){
+    background-color: #0077b5;
+    font-weight: bold;
+}
+.redes a:nth-child(2){
+    background-color: #333;
+    font-weight: bold;
+}
+.redes a:nth-child(3){
+    background-color: #1da1f2;
+    font-weight: bold;
+}
+.redes a:nth-child(4){
+    background-color: #00aff0;
+    font-weight: bold;
+}
+
+/* .portafolio */
+
+.portafolio{
+    margin-bottom: 70px;
+}
+
+.portafolio h2{
+    color: black;
+    margin-bottom: 20px;
+    font-weight: bold;
+   display: inline-block;
+}
+.portafolio .linea{
+    width: 4px;
+    height: 18px;
+    background:#006c54;
+    display: inline-block;
+}
+.portafolio .linea:hover{
+    border: 1px solid blue;
+}
+
+.portafolio .cont-photos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.portafolio .cont-photos img{
+    width: 300px;
+    margin: 20px;
+}
+
+.portafolio .cont-photos img:hover{
+    border: 5px solid #006c54;
+    box-shadow: 2px 5px 5px green;
+}
+
+/* .kills*/
+
+.skills{
+    margin-bottom: 70px;
+}
+
+.skills h2{
+    color: black;
+    margin-bottom: 20px;
+    font-weight: bold;
+   display: inline-block;
+}
+.skills .linea{
+    width: 4px;
+    height: 18px;
+    background:#006c54;
+    display: inline-block;
+}
+.skills .linea:hover{
+    border: 1px solid blue;
+}
+
+.cont-skills{
+    display: flex;
+}
+
+.columna1{
+    width: 48%;
+    margin-right: 15px;
+}
+.columna2{
+    width: 48%;
+    margin-left: 15px;
+}
+
+.skills h4{
+    color: black;
+    display: inline-block;
+    font-size: 1.5rem;
+}
+
+.skills .big{
+    width: 100%;
+    height: 20px;
+    background: #4c2358;
+    border-radius: 15px;
+    border: 1px solid #008051;
+    position: relative;
+    display: inline-block;
+    margin-bottom: 15px;
+
+}
+
+.skills .small{
+    width: 40%;
+    height: 19px;
+    background:#008051;
+    border-radius: 15px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* .contact*/
+
+.contact{
+    margin-bottom: 70px;
+}
+
+.contact h2{
+    color: black;
+    margin-bottom: 20px;
+    font-weight: bold;
+   display: inline-block;
+}
+.contact .linea{
+    width: 4px;
+    height: 18px;
+    background:#006c54;
+    display: inline-block;
+}
+.contact .linea:hover{
+    border: 1px solid blue;
+}
+
+.cont-contact{
+    display: flex;
+    justify-content: space-between; 
+
+}
+
+.cont-contact .f1{
+    width: 60%;
+    border-right: 1px solid black;
+
+}
+
+.cont-contact .f2{
+    width: 40%;
+}
+
+.cont-contact .formulario{
+    display: flex;
+}
+
+.formulario input{
+    
+}
+
+
+
+
+
+
