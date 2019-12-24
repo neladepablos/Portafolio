@@ -31,6 +31,10 @@ a {
   text-decoration: none;
   color: white;
 }
+
+a:hover{  
+  border-bottom: 2px solid #007942;
+}
 h2:hover {
   border: 1px solid black;
 }
@@ -351,4 +355,5 @@ main {
   box-shadow: 8px 5px 8px blue;
   border: 2px solid blue;
   transition: 0.5 ease-out;
+  padding: 10px 10px;
 }
