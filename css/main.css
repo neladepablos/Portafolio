@@ -26,22 +26,37 @@ h5,
 h6 {
   color: white;
   font-size: 2.5rem;
+  
+  
 }
 a {
   text-decoration: none;
   color: white;
+  
 }
 
-a:hover{  
+/*a:hover{  
   border-bottom: 2px solid #007942;
+  
+}*/
+
+h2{
+  color: black;
+  margin-bottom: 20px;
+  font-weight: bold;
+  display: inline-block;
+  transition: all 10s ease;
 }
 h2:hover {
   border: 1px solid black;
+  transform: translateX(200px);
+  cursor: pointer;  
 }
 
 p {
   display: inline-block;
 }
+
 /* .header*/
 .header {
   background: black;
@@ -61,6 +76,10 @@ p {
   margin-right: 30px;
 }
 
+.header li a:hover{
+  border-bottom: 2px solid #007942;
+}
+
 /* main */
 main {
   background: white;
@@ -73,12 +92,14 @@ main {
   margin-bottom: 70px;
 }
 
-.about h2 {
+/*.about h2 {
   color: black;
   margin-bottom: 20px;
   font-weight: bold;
   display: inline-block;
-}
+    
+}*/
+
 .about .linea {
   width: 4px;
   height: 18px;
@@ -103,9 +124,13 @@ main {
   height: 200px;
   border-radius: 100%;
   border: 6px solid #42704e;
+  transition: all 3s ease;
+  
 }
 .about .cont-about img:hover {
   border: 6px solid black;
+  text-decoration: none;
+  transform: rotate(360deg);
 }
 
 .about p {
@@ -120,9 +145,12 @@ main {
   border-radius: 100%;
   padding: 10px;
   margin: 5px;
+  transition: all 1s ease;
 }
 .about .redes a:hover {
   border: 1px solid blue;
+  width: 100px;
+  box-shadow: 3px 3px 2px black;
 }
 .redes a:nth-child(1) {
   background-color: #0077b5;
@@ -147,12 +175,13 @@ main {
   margin-bottom: 70px;
 }
 
-.portafolio h2 {
+/*.portafolio h2 {
   color: black;
   margin-bottom: 20px;
   font-weight: bold;
   display: inline-block;
-}
+} */
+
 .portafolio .linea {
   width: 4px;
   height: 18px;
@@ -169,14 +198,20 @@ main {
   justify-content: center;
 }
 
+.portafolio .cont-photos .relativo img{
+  width: 340px;
+}
+
 .portafolio .cont-photos img {
   width: 300px;
   margin: 20px;
+  transition: all 1s ease;
 }
 
 .portafolio .cont-photos img:hover {
   border: 5px solid #006c54;
   box-shadow: 2px 5px 5px green;
+  transform: rotate(5deg);
 }
 
 /* .kills*/
@@ -185,12 +220,12 @@ main {
   margin-bottom: 70px;
 }
 
-.skills h2 {
+/*.skills h2 {
   color: black;
   margin-bottom: 20px;
   font-weight: bold;
   display: inline-block;
-}
+}*/
 .skills .linea {
   width: 4px;
   height: 18px;
@@ -257,12 +292,12 @@ main {
   border: 1px solid blue;
 }
 
-.contact h2 {
+/*.contact h2 {
   color: black;
   margin-bottom: 20px;
   font-weight: bold;
   display: inline-block;
-}
+} */
 
 .cont-contact {
   display: flex;
@@ -347,13 +382,24 @@ main {
 .footer div img {
   width: 50px;
   border-radius: 100%;
-  transition: 0.5 ease-out;
+  transition: all 1s ease;
+  animation:movimiento 10s ease infinite;
    
 }
+
 
 .footer img:hover{
   box-shadow: 8px 5px 8px blue;
   border: 2px solid blue;
-  transition: 0.5 ease-out;
   padding: 10px 10px;
+  
+
+  
+}
+
+@keyframes movimiento{
+ 
+  0%{transform: translate(0px);}
+  50%{transform: translate(-50px);}
+  100%{transform: translate(0px);} 
 }
